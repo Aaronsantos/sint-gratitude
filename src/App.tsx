@@ -5,12 +5,19 @@ import Pages from './pages';
 // import { Container } from './styles';
 
 const src: React.FC = () => {
-  return (  
-  <ThemeProvider theme={{ colors: { white: '#EECFCA', brand: '#F2CC61'}, typography: {} }}>
-    <Menu itens={[{ name: 'Gratidão', href: '/', selected: true}, { name: 'Conceitos', href: '/', selected: false}]} />
-    <Pages />
-  </ThemeProvider>
+  return (
+    <ThemeProvider
+      theme={{ colors: { white: '#EECFCA', brand: '#F2CC61' }, typography: {} }}
+    >
+      <Menu
+        itens={[
+          { name: 'Gratidão', href: '/', selected: true },
+          { name: 'Conceitos', href: '/conhecimento', selected: false },
+        ]}
+      />
+      <Pages />
+    </ThemeProvider>
   );
-}
+};
 
 export default src;
