@@ -8,11 +8,11 @@ const Routes: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route key="test" component={Home} path='/' exact />
-        <Route key="test" component={QuoteInsert} path='/add' exact/>
+        <Route key="test" component={Home} path="/" exact />
+        <Route key="test" component={QuoteInsert} path="/add" exact />
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default Routes;

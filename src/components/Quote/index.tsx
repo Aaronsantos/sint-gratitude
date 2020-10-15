@@ -10,14 +10,16 @@ type QuoteProps = {
   date: string | Date;
 };
 
-const Quote: React.FC<QuoteProps> = ({content, author, date}) => {
+const Quote: React.FC<QuoteProps> = ({ content, author, date }) => {
   return (
     <Container>
       <p>{content}</p>
       <span aria-hidden />
-      <p>{author}, {parseDate(date)}</p>
+      <p>
+        {author}, {parseDate(date)}
+      </p>
     </Container>
   );
-}
+};
 
 export default Quote;

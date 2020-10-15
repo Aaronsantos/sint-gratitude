@@ -1,10 +1,10 @@
-import { useState} from 'react';
+import { useState } from 'react';
 
 import api from '../api';
 
 const useQuotes = () => {
   const [input, setInput] = useState('');
-  const createQuote = () => api.create({data: input, date: new Date()});
+  const createQuote = () => api.create({ data: input, date: new Date() });
   const deleteQuote = (id) => api.deleteItem(id);
   const getAll = () => api.getAll();
   const get = (id) => api.get(id);
@@ -18,7 +18,7 @@ const useQuotes = () => {
     getAll,
     get,
     getRandomQuote,
-  }
-}
+  };
+};
 
 export default useQuotes;

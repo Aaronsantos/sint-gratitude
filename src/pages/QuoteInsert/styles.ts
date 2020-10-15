@@ -14,10 +14,9 @@ export const Container = styled.form`
   }
 `;
 
-export const ButtonContainer = styled.span<{visible:boolean}>`
+export const ButtonContainer = styled.span<{ visible: boolean }>`
   display: flex;
   justify-content: right;
-  opacity: ${({ visible }) => visible ? '1' : '0'};
+  opacity: ${({ visible }) => (visible ? '1' : '0')};
   transition: opacity 0.4s ease;
-
-`
+`;

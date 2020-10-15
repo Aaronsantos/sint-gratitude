@@ -1,4 +1,4 @@
-import styled, {  keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const imgLoop = keyframes`
   0% {
@@ -8,7 +8,7 @@ const imgLoop = keyframes`
   100% {
     transform: rotate(22deg)
   }
-`
+`;
 
 export const Container = styled.main`
   max-width: 920px;
@@ -54,7 +54,6 @@ export const HeroSection = styled.section`
       p:last-child {
         font-size: 24px;
       }
-
     }
 
     img {
@@ -64,7 +63,6 @@ export const HeroSection = styled.section`
       width: 50vw;
       z-index: 0;
     }
-
   }
   img {
     width: 40vh;
@@ -72,14 +70,14 @@ export const HeroSection = styled.section`
     transform: rotate(22deg);
     animation: ${imgLoop} 2s infinite alternate-reverse;
   }
-`
+`;
 
 export const QuoteSection = styled.section`
   margin: 80px auto;
   @media (max-width: 800px) {
     margin: 80px 16px;
   }
-`
+`;
 
 export const ButtonSection = styled.section`
   width: 100%;
@@ -87,4 +85,4 @@ export const ButtonSection = styled.section`
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
-`
+`;

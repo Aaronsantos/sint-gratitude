@@ -48,7 +48,7 @@ const Home: React.FC = () => {
       </QuoteSection>
       <ButtonSection>
         <Button type="button" onClick={onClickButton}>
-          Ser grato
+          Expressar gratidão
         </Button>
       </ButtonSection>
     </Container>

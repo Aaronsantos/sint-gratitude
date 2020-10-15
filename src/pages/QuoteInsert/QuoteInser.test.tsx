@@ -14,8 +14,6 @@ jest.mock('react-router-dom', () => ({
   }),
 }));
 
-const mockData = { data: 'test quote', date: new Date() };
-
 describe('Quote Insertion page', () => {
   it('Should render expected elements', () => {
     mockLocalStorage({});
