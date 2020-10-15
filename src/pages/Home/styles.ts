@@ -25,6 +25,7 @@ export const HeroSection = styled.section`
   justify-content: center;
   align-items: center;
   height: 80vh;
+  overflow: hidden;
   span {
     p:first-child {
       font-size: 80px;
@@ -42,12 +43,17 @@ export const HeroSection = styled.section`
       line-height: 1em;
     }
   }
+  img {
+    width: 40vh;
+    mix-blend-mode: multiply;
+    animation: ${imgLoop} 2s infinite alternate-reverse;
+  }
 
   @media (max-width: 800px) {
     height: auto;
     justify-content: left;
     span {
-      width: 80%;
+      width: 60%;
       p:first-child {
         font-size: 40px;
       }
@@ -57,18 +63,9 @@ export const HeroSection = styled.section`
     }
 
     img {
-      position: relative;
-      top: 0;
-      right: 40px;
-      width: 50vw;
+      width: 40%;
       z-index: 0;
     }
-  }
-  img {
-    width: 40vh;
-    mix-blend-mode: multiply;
-    transform: rotate(22deg);
-    animation: ${imgLoop} 2s infinite alternate-reverse;
   }
 `;
 
