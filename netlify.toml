@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "/conhecimento"
-  to = "https://master--eager-ptolemy-b9ab31.netlify.app/"
-  status = 200
-  force = true # COMMENT: ensure that we always redirect
-  headers = {X-From = "Netlify"}
-  signed = "API_SIGNATURE_TOKEN"
